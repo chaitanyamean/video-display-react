@@ -1,0 +1,30 @@
+.video-container {
+    margin: 10px 0 0 15px !important;
+}
+
+.video-card {
+    margin-top: 10px;
+}
+
+.like-cls {
+    color: black;
+    cursor: pointer;
+}
+
+.video-cls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+}
+
+.card-cls {
+    background-color: #f0f0f0;
+    color: #4d4d4d;
+}
+
+.unlike-cls {
+    cursor: pointer;
+    color:  #0a66c2;
+}
