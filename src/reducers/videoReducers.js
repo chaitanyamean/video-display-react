@@ -1,5 +1,4 @@
 export const videoListReducer = (state=[], action) => {
-    console.log('state', state, action);
     switch(action.type) {
         case 'VIDEO_LIST':
         return  action.payload;
