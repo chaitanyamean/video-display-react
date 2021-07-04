@@ -1,29 +1,28 @@
 import './App.css';
-import VideoPlayer from './components/VideoPlayer/VideoPlayer';
-import { Tabs, Tab } from 'react-bootstrap';
 import React from 'react';
-import {day1} from './Data/day1';
-import {day2} from './Data/day2';
-import {day3} from './Data/day3';
 
-
+import Home  from './components/Home/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import SevenDays from './components/sevenDays/SevenDays';
 
 function App() {
-
   return (
-    <div className="App">
-      <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
-        <Tab eventKey="home" title="Day 1(leg)">
-          <VideoPlayer videos={day1} />
-        </Tab>
-        <Tab eventKey="profile" title="Day 2(back)">
-          <VideoPlayer videos={day2}/>
-        </Tab>
-        <Tab eventKey="contact" title="Day 3(chest)">
-          <VideoPlayer videos={day3}/>
-        </Tab>
-      </Tabs>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/sevenDays">
+            <SevenDays />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
