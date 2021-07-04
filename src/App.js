@@ -12,14 +12,14 @@ function App() {
 
   return (
     <div className="App">
-      <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-        <Tab eventKey="home" title="Day 1">
+      <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
+        <Tab eventKey="home" title="Day 1(leg)">
           <VideoPlayer videos={day1} />
         </Tab>
-        <Tab eventKey="profile" title="Day 2">
+        <Tab eventKey="profile" title="Day 2(back)">
           <VideoPlayer videos={day2}/>
         </Tab>
-        <Tab eventKey="contact" title="Day 3">
+        <Tab eventKey="contact" title="Day 3(chest)">
           <VideoPlayer videos={day3}/>
         </Tab>
       </Tabs>
