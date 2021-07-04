@@ -10,6 +10,7 @@ import {
 import SevenDays from './components/sevenDays/SevenDays';
 
 function App() {
+  console.log('sss')
   return (
     <Router>
       <div className="App">
