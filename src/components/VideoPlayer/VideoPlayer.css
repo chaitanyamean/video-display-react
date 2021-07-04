@@ -22,9 +22,27 @@
 .card-cls {
     background-color: #f0f0f0;
     color: #4d4d4d;
+    width: '42rem'
 }
 
 .unlike-cls {
     cursor: pointer;
     color:  #0a66c2;
 }
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .card-cls {
+        background-color: #f0f0f0;
+        color: #4d4d4d;
+        width: '20rem'
+    }
+    .video-container {
+        width: 390px !important;
+        height: 360px !important;
+    }
+    .video-cls {
+        margin: 0 !important;
+    }
+    
+  }

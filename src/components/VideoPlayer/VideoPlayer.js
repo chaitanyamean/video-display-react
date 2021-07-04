@@ -10,7 +10,7 @@ const VideoPlayer = ({videos}) => {
             {videos && videos.map((video, key) => {
                 return (
                     <div key={key} className='video-card'>
-                        <Card className="card-cls" style={{ width: '42rem' }}>
+                        <Card className="card-cls">
                             <ReactPlayer controls
                                 className='video-container'
                                 url={video.videoLink} />
